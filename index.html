@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkShop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding-left: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+        header {
+            background-color: rgb(120, 126, 124);
+            text-align: center;
+            color: white;
+            padding: 8px;
+        }
+        h1 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 3rem;
+            text-shadow: 1px 1px 10px rgb(195, 195, 195);
+        }
+        .container {
+            max-width: 230px;
+            margin: auto;
+            background-color: rgba(240, 248, 255, 0.264);
+            float: right;
+            padding: 8px;
+            text-align: center;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 10px rgba(255, 253, 253, 0.6);
+        }
+        section {
+            padding: 20px;
+            background-image: url(../image/palestras.jpg);
+            background-size: cover;
+            overflow: hidden;
+            background-position: bottom;
+            background-position-y: calc(100% + 250px);
+            
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+        .marginbottom {
+            margin-bottom: 15px;
+        }
+        #name {
+            font-weight: bold;
+            text-decoration: none;
+        }
+        #email {
+            font-weight: bold;   
+        }
+        #name:hover {
+            background-color: rgba(98, 98, 98, 0.239); 
+            box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.474);    
+        }
+        #email:hover {
+            background-color: rgba(98, 98, 98, 0.239);
+            box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.474);  
+        }
+        input, select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: none;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            color: rgb(0, 0, 0);
+            background-color: rgba(240, 248, 255, 0.591);;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            box-shadow: 1px 1px 15px darkgray;
+        }
+        #picture {
+            width: 210px;
+        }
+        .description {
+            color: white;
+            display: inline-block;
+            max-width: 40%;
+            margin-left: 40px;
+
+        }
+        .description p, .description h3 {
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+        footer {
+            background-color: rgb(70, 70, 70);
+            text-align: center;
+            padding: 80px 0;
+        }
+        footer img {
+            opacity: 75%;
+            box-shadow: 2px 2px 10px rgb(124, 124, 124);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inteligência Financeira com Roberto Navarro</h1>
+    </header>
+    <section>
+        <div class="container">
+            <h2 class="marginbottom ">GARANTA O SEU LUGAR NO WORKSHOP DO MAIOR ESPECIALISTA DE MARKETING DA ATUALIDADE.
+            </h2>
+            <p class="marginbottom ">Eu Roberto, Estou comprometido em te passar toda minha experiência, te dar credibilidade e acelerar seus resultados.
+            </p>
+            <form>
+                <input id="name" type="text" name="name" placeholder="Nome:">
+
+                <input id="email" type="text" name="email" placeholder="Email:">
+
+                <select name="place" id="campo">
+
+                    <option value="SP">São Paulo</option>
+
+                    <option value="MG">Minas Gerais</option>
+
+                    <option value="RJ">Rio de Janeiro</option>
+
+                    <option value="BA">Bahia</option>
+
+                    <option value="PR">Paraná</option>
+
+                    <option value="RS">Rio Grande do Sul</option>
+
+                    <option value="PE">Pernambuco</option>
+
+                    <option value="CE">Ceará</option>
+
+                    <option value="PA">Pará</option>
+
+                    <option value="SC">Santa Catarina</option>
+
+                </select>
+
+                <input id="botao" type="submit" value="INSCREVA-SE" onclick="botao()">
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <img id="picture" src="../image/unnamed.jpg" alt="Foto">
+        <div class="description">
+            <h3>Roberto Navarro - Coaching Financeiro
+            </h3>
+            <P>De lavador de vidros a multimilionário. Conquistei meu primeiro milhão aos 21 anos, perdi tudo e recuperei em menos de 14 meses e de lá pra cá não parei mais. 
+
+                Fui cronista esportivo, vice presidente da Associação Comercial de São Paulo e eleito franqueado do ano Brasil AM PM. 
+                
+                Tenho mais de 1.280 técnicas exclusivas de Coaching, sou escritor best seller, triatleta e considerado o maior Educador Financeiro do país.</P>
+            <p>Sou Agente de Investimentos e PQO da B3, Especialista em Inteligência Espiritual e Emocional, Criador da Ciência do Coaching Financeiro e metodologia Educador Financeiro Abundante.
+
+            </p>
+        </div>        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
