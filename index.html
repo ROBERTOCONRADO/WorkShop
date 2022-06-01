@@ -38,11 +38,11 @@
             text-align: center;
             font-family: 'Bebas Neue', cursive;
             font-size: 1.5rem;
-            text-shadow: 1px 1px 10px rgba(255, 253, 253, 0.6);
+            text-shadow: 1px 1px 6px rgba(42, 42, 42, 0.579);
         }
         section {
             padding: 20px;
-            background-image: url(../image/palestras.jpg);
+            background-image: url(../WorkShop/image/palestras.jpg);
             background-size: cover;
             overflow: hidden;
             background-position: bottom;
@@ -57,7 +57,6 @@
         }
         #name {
             font-weight: bold;
-            text-decoration: none;
         }
         #email {
             font-weight: bold;   
@@ -110,6 +109,16 @@
             opacity: 75%;
             box-shadow: 2px 2px 10px rgb(124, 124, 124);
         }
+        #contato {
+            background-color: black;
+            color: azure;
+            height: 150px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 22px;
+        }
     </style>
 </head>
 <body>
@@ -151,13 +160,13 @@
 
                 </select>
 
-                <input id="botao" type="submit" value="INSCREVA-SE" onclick="botao()">
+                <input onclick="mudarNome()" id="buttom" name="botao" type="submit" value="INSCREVA-SE">
 
             </form>
         </div>
     </section>
     <footer>
-        <img id="picture" src="../image/palestras" alt="Foto">
+        <img id="picture" src="../WorkShop/image/unnamed.jpg" alt="Foto">
         <div class="description">
             <h3>Roberto Navarro - Coaching Financeiro
             </h3>
@@ -171,6 +180,9 @@
             </p>
         </div>        
     </footer>
+    
+        <a id="contato" href="mailto:robertoconradorc@gmail.com">📩robertoconradorc@gmail.com |              &copy; Roberto Conrado</a>
+    
     <script src="script.js"></script>
 </body>
 </html>
